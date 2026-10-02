@@ -14,9 +14,9 @@ Karoo HR connects your Apple Watch directly to your Hammerhead Karoo. See your p
 Karoo HR is currently a **limited beta**. You need two apps: Karoo HR on your Apple Watch and the Karoo HR extension on your Karoo.
 
 - **Karoo:** [Download Karoo HR 1.4 (20)](https://github.com/paddywills/karoo-sync/releases/download/karoo-1.4-build20/KarooHR-1.4-build20.apk), then follow the installation steps below. This is the same beta installer used in the current device testing.
-- **Apple Watch:** public TestFlight enrolment is **not open yet**. [Register your interest](https://github.com/paddywills/karoo-sync/issues/new?title=Beta%20testing%20interest) for the external beta. Do not post your email address or Apple ID publicly. The Karoo download alone is not enough to use the app; you also need Watch access.
+- **Apple Watch:** [Public TestFlight joining link](https://testflight.apple.com/join/CcbZKYg6) — **awaiting Apple beta review**. Build 1.4 (25) was submitted on 2 October 2026. Installation will become available after approval, with an initial limit of 100 testers. No individual invitation is needed once the beta opens. The Karoo download alone is not enough to use the app.
 
-Existing invited testers can continue using their TestFlight invitation. The verified combination is Watch **1.4 (23)** and Karoo **1.4 (20)**. A newer Watch build with resumable saving and calorie estimates is still awaiting public availability and device checks. You do not need a computer, Xcode or Developer Mode for installation.
+Existing invited testers can continue using their TestFlight invitation. The physically tested combination is Watch **1.4 (23)** and Karoo **1.4 (20)**. Public beta build **1.4 (25)** repackages the same Watch app code for external testing. Separate changes for resumable saving and calorie estimates remain under development and are not included in build 25. You do not need a computer, Xcode or Developer Mode for installation.
 
 ### What you need
 
@@ -33,7 +33,7 @@ This beta has been tested on the third-generation Karoo. Karoo 2 compatibility h
 ### 1. On your Apple Watch
 
 1. Install **TestFlight** on the iPhone paired with your Watch.
-2. Open your invitation on the iPhone and choose **View in TestFlight**, then **Accept**.
+2. Once Apple approves the beta, open the [public joining link](https://testflight.apple.com/join/CcbZKYg6) on your iPhone and follow **View in TestFlight → Accept**. Existing testers can also use their invitation.
 3. Find **Karoo HR** in TestFlight and tap **Install**.
 4. Wait for Karoo HR to appear in your Watch’s app list, then open it.
 
@@ -94,7 +94,7 @@ The Watch runs a temporary workout to obtain frequent readings. It discards that
 3. Wait for **Saved to Apple Health**. Saving a long ride can take several minutes; the final Health save does not have a reliable countdown.
 4. After your Watch and iPhone sync, check the workout in Apple Health/Fitness on your iPhone, including its route map.
 
-**Watch build 23:** keep Karoo HR open through the Health-saving step as well. Do not restart or repeatedly retry while it is saving.
+**Watch builds 23 and 25:** keep Karoo HR open through the Health-saving step as well. Do not restart or repeatedly retry while it is saving.
 
 When Karoo confirms a ride has ended, the Watch stops heart-rate sharing and offers the reminder. A pause or lost connection does not count as a finished ride. If the reminder is missed, end sharing yourself. Karoo reception stays enabled for next time; **Disable reception** turns it off.
 
@@ -161,6 +161,8 @@ For help, [report an issue](https://github.com/paddywills/karoo-sync/issues) or 
 ## Beta disclaimer
 
 Karoo HR is independent beta software and is not affiliated with or endorsed by Apple, Hammerhead or SRAM. It is provided “as is”, without warranty. Install and use it at your own risk. To the extent permitted by applicable law, the developer accepts no liability for damage to your Apple Watch, Karoo or other equipment, loss or corruption of ride or Health data, or other loss arising from its use. Nothing in this notice excludes liability that cannot legally be excluded.
+
+Read the [beta privacy information](https://github.com/paddywills/karoo-sync/blob/main/PRIVACY.md) for data handling and contact details.
 
 ## About this repository
 
