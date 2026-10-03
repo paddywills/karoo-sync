@@ -24,7 +24,7 @@ You need both apps. No computer, Xcode or Developer Mode is required.
 | Apple Watch — watchOS 10+, paired with an iPhone on iOS 17+ | [Join through TestFlight](https://testflight.apple.com/join/CcbZKYg6) |
 | Karoo — 2024 / third-generation model | [Download Karoo HR 1.4 (20)](https://github.com/paddywills/karoo-sync/releases/download/karoo-1.4-build20/KarooHR-1.4-build20.apk) |
 
-**TestFlight availability (3 October):** Watch 1.4 (28) is available to existing internally invited testers. The public link has approved build 25; build 28 is not yet available publicly. Check your build under **More → Help & version**. The public link initially allows 100 testers.
+**Available now (3 October):** Watch 1.4 (28) is approved and available through the public TestFlight link and existing invitations. Check your build under **More → Help & version**. The public link initially allows 100 testers.
 
 These update notes describe Watch 28 with Karoo 20. Karoo 2 and every supported Watch/OS combination have not been verified.
 
