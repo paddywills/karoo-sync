@@ -6,6 +6,15 @@
 - Save completed rides to Apple Health with GPS routes, heart rate, distance, and recorded calories, speed, cadence and power where available.
 - Transfer directly over Bluetooth, without internet or waiting for Karoo’s cloud upload. Your usual Strava sync can stay enabled.
 
+## What’s new — Watch 1.4 (28)
+
+- **Clearer finish:** a successful import no longer leaves “Import paused” on the home screen.
+- **Consistent navigation:** use the top-left arrow to go back. During Health saving, return home and use **View progress**.
+- **Updates and feedback:** release notes appear once after an update and remain under **More → What’s new**. **More → Report an issue** gives feedback options.
+- **Name corrected:** app metadata now uses **Karoo HR**. Apple Health may retain the old **WatchKarooBLE** source name on existing records.
+
+Since the first public build (25): Health saves can resume on Watch, missing calories can be estimated from recorded power, and resting energy is read without adding duplicate resting calories. See the saving and calorie notes below.
+
 ## Get the beta
 
 You need both apps. No computer, Xcode or Developer Mode is required.
@@ -15,9 +24,9 @@ You need both apps. No computer, Xcode or Developer Mode is required.
 | Apple Watch — watchOS 10+, paired with an iPhone on iOS 17+ | [Join through TestFlight](https://testflight.apple.com/join/CcbZKYg6) |
 | Karoo — 2024 / third-generation model | [Download Karoo HR 1.4 (20)](https://github.com/paddywills/karoo-sync/releases/download/karoo-1.4-build20/KarooHR-1.4-build20.apk) |
 
-**Public TestFlight:** Watch 1.4 (25) was submitted for Apple’s beta review on 2 October 2026. Joining opens after approval, initially for 100 testers. Existing invited testers can use their invitation.
+**TestFlight availability (3 October):** Watch 1.4 (28) is available to existing internally invited testers. The public link has approved build 25; build 28 is not yet available publicly. Check your build under **More → Help & version**. The public link initially allows 100 testers.
 
-Watch 25 uses the same app code as physically tested Watch 23, paired with Karoo 20. Karoo 2 and every supported Watch/OS combination have not been verified.
+These update notes describe Watch 28 with Karoo 20. Karoo 2 and every supported Watch/OS combination have not been verified.
 
 ### Install
 
@@ -33,7 +42,7 @@ Watch 25 uses the same app code as physically tested Watch 23, paired with Karoo
 5. In the Karoo app, open **More → Set up ride sync** and allow access to saved rides.
 6. Turn off Hammerhead’s Apple Health export and any other app’s export of the same rides to avoid duplicates. Strava ride uploads can stay on; check its separate Health export setting.
 
-At your first import, allow Health **write access** for workouts, routes and ride measurements, plus **read access to Workouts** for duplicate detection and save recovery. Live sharing also needs **Heart Rate read access**.
+At your first import, allow Health **write access** for workouts, routes and ride measurements, plus **read access to Workouts** for duplicate detection and save recovery, and **Resting Energy** for the calorie split. Live sharing also needs **Heart Rate read access**.
 
 ## Ride and save
 
@@ -45,8 +54,9 @@ At your first import, allow Health **write access** for workouts, routes and rid
 
 1. **Finish and save the ride on Karoo first.**
 2. On Watch, choose **Sync ride** from the reminder, or **End HR + sync ride** if still sharing.
-3. Keep the devices nearby and **keep the Watch app open until “Saved to Apple Health”**. Approve pairing if asked. Saving can take several minutes; avoid restarting or repeatedly retrying.
-4. After Watch/iPhone syncing, check the workout and route in Apple Health/Fitness.
+3. Keep both devices nearby and **stay in the Watch app during Bluetooth transfer**. Approve pairing if asked.
+4. **Build 28:** once **Saving to Apple Health** starts, you can return to the Watch face. If interrupted, reopen Karoo HR → **Resume Health save**. The ride is stored on Watch; Karoo and internet are no longer needed. **Build 25: keep the app open until saved.** Saving can take several minutes; do not restart or retry while Health is still working.
+5. When **Saved to Health** appears, use the **top-left arrow** to return home. After Watch/iPhone syncing, check the workout and route in Apple Health/Fitness.
 
 The reminder stops HR sharing when Karoo confirms the ride has ended. A pause or disconnection does not mean the ride has finished. If you miss the reminder, end sharing yourself. Karoo reception stays enabled for next time.
 
@@ -61,13 +71,15 @@ The reminder stops HR sharing when Karoo confirms the ride has ended. A pause or
 
 In my testing, Watch battery use is similar to recording a normal cycling workout. **Plan on around two hours**, depending on Watch model, battery health and starting charge; this is not a guaranteed runtime.
 
-Builds 23/25 need the Watch app open throughout transfer **and Health saving**. Recorded calories are imported when available; otherwise calories may show as zero. Resumable saving and calorie estimates are not included in build 25.
+**Calories:** recorded active calories are used when available. Otherwise, sufficiently complete recorded power can provide an estimate. Karoo HR shows active calories and a total estimate including resting energy during active riding. It saves active calories to Health and keeps the total estimate in workout metadata. **Fitness may display the same figure for active and total calories.** Karoo HR never adds derived resting-energy entries.
+
+Older build 25 requires the Watch app open throughout transfer and Health saving and can show zero calories when the ride has none recorded. Update to 28 for resumable saving and estimates.
 
 ## Updates and help
 
 Update Watch through TestFlight and Karoo through [GitHub Releases](https://github.com/paddywills/karoo-sync/releases), following the version-pairing notes. Install Karoo updates over the existing app.
 
-[Report a problem](https://github.com/paddywills/karoo-sync/issues) or use TestFlight feedback. Include both app versions and the exact message. Watch versions are under **Help & version**. Do not post private routes or Health data publicly.
+[Report a problem](https://github.com/paddywills/karoo-sync/issues) or use TestFlight feedback. Include both app versions and the exact message. On Watch, use **More → Report an issue** for feedback options and **More → Help & version** for your version. Do not post private routes or Health data publicly.
 
 ## Beta disclaimer
 
