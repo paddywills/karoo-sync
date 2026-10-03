@@ -1,6 +1,6 @@
 # Karoo HR beta — privacy information
 
-Updated 2 October 2026.
+Updated 3 October 2026.
 
 Karoo HR connects your Apple Watch and Hammerhead Karoo to share live heart rate and import completed cycling rides into Apple Health. It does not require a Karoo HR account.
 
@@ -18,7 +18,7 @@ Karoo HR does not upload your heart-rate readings or ride route to a developer-o
 
 The Watch keeps a limited local connection/import event log for troubleshooting. It is designed to describe app events rather than record heart-rate values or route coordinates.
 
-Apple's TestFlight service handles beta distribution and may provide the developer with crash reports, usage information and feedback under Apple's terms. If you email us or submit a GitHub issue, we receive the information you choose to send. GitHub issues are public: do not include private routes, Health records, passwords or pairing codes.
+Apple's TestFlight service handles beta distribution and may provide the developer with crash reports, usage information and feedback under Apple's terms. If you submit TestFlight feedback or a GitHub issue, we receive the information you choose to send. GitHub issues are public: do not include private routes, Health records, passwords or pairing codes.
 
 ## Your choices
 
@@ -26,4 +26,4 @@ You can stop sharing in the app, revoke its Health permissions in Apple's Health
 
 ## Contact
 
-For privacy questions, use Send Beta Feedback in TestFlight. Do not include private Health data or routes in public GitHub issues.
+For support or privacy questions, use **Send Beta Feedback** in TestFlight. For general issues, use the [Karoo HR issue tracker](https://github.com/paddywills/karoo-sync/issues). GitHub issues are public: do not include private Health data or routes.
