@@ -26,4 +26,4 @@ You can stop sharing in the app, revoke its Health permissions in Apple's Health
 
 ## Contact
 
-For support or privacy questions, use **Send Beta Feedback** in TestFlight. For general issues, use the [Karoo HR issue tracker](https://github.com/paddywills/karoo-sync/issues). GitHub issues are public: do not include private Health data or routes.
+For support, [Report an issue](https://github.com/paddywills/karoo-sync/issues/new?template=report.yml) on GitHub. Reports are public: do not include email addresses, private Health data or routes. For private or privacy-related questions, use **Send Beta Feedback** in TestFlight. TestFlight and email feedback are reviewed manually.

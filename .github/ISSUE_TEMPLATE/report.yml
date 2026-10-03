@@ -1,0 +1,31 @@
+name: Report an issue
+description: Report a problem or ask for help with Karoo HR.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This report is public.** Do not include email addresses, private routes or Health data. Crop or blur personal details in screenshots.
+        Check [existing issues](https://github.com/paddywills/karoo-sync/issues) first; you may find an answer there.
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened or what do you need help with?
+      description: For a problem, tell us what you were doing, what you expected, and any exact message you saw.
+      placeholder: Describe your problem or question here.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Karoo HR app versions (if known)
+      description: On Watch, open More → Help & version. Include the Karoo app version too, if you can.
+      placeholder: Watch version/build; Karoo version/build
+    validations:
+      required: false
+  - type: input
+    id: devices
+    attributes:
+      label: Watch and Karoo models (if known)
+      placeholder: Apple Watch model; Karoo model
+    validations:
+      required: false

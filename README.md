@@ -79,7 +79,7 @@ Older build 25 requires the Watch app open throughout transfer and Health saving
 
 Update Watch through TestFlight and Karoo through [GitHub Releases](https://github.com/paddywills/karoo-sync/releases), following the version-pairing notes. Install Karoo updates over the existing app.
 
-[Report a problem](https://github.com/paddywills/karoo-sync/issues) or use TestFlight feedback. Include both app versions and the exact message. On Watch, use **More → Report an issue** for feedback options and **More → Help & version** for your version. Do not post private routes or Health data publicly.
+[Report an issue](https://github.com/paddywills/karoo-sync/issues/new?template=report.yml) for problems or support questions. Sign in to GitHub to use the short form. Include both app versions if known; your Watch version is under **More → Help & version**. Reports are public: do not include email addresses, private routes or Health data. TestFlight and email feedback are reviewed manually.
 
 ## Beta disclaimer
 
