@@ -83,6 +83,31 @@ Karoo continues recording if Watch disconnects or its battery runs out. Missing 
 
 Avoid importing a ride already saved by HealthFit or another app. Available measurements depend on what Karoo recorded.
 
+### From riding to saved in Health
+
+These Watch screenshots show both functions used together for one ride: sharing heart rate, transferring the saved ride and finishing the Health save. If you only use ride transfer, start with **More → Earlier rides** and follow the transfer and saving stages shown in screenshots 3–6. Read left to right, then continue on the next row. The readings, calories and elapsed times are examples from this ride.
+
+| 1. Live heart rate | 2. Ready to sync | 3. Bluetooth transfer |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/01-live-heart-rate.jpg" alt="Karoo HR showing 103 bpm and End HR + sync ride" width="200"> | <img src="docs/screenshots/02-heart-rate-stopped.jpg" alt="Heart rate stopped, with Sync ride and Later buttons" width="200"> | <img src="docs/screenshots/03-transferring-ride.jpg" alt="Syncing ride: receiving ride at 12 percent, with instructions to stay here and keep Karoo nearby" width="200"> |
+| Finish and save on Karoo first, then tap **End HR + sync ride**. | When sharing has stopped, tap **Sync ride** to import the saved ride. | **Stay in the Watch app** and keep Karoo nearby until transfer finishes. |
+
+| 4. Saving measurements | 5. Final Health save | 6. Saved to Health |
+| :---: | :---: | :---: |
+| <img src="docs/screenshots/04-saving-measurements.jpg" alt="Saving measurements: 3250 of 4233 records, with Resume Health save instructions" width="200"> | <img src="docs/screenshots/05-final-health-save.jpg" alt="Final Health save waiting for confirmation, with no time estimate available" width="200"> | <img src="docs/screenshots/06-saved-to-health.jpg" alt="Saved to Health: 346 active kcal, 477 total kcal estimated from power, route included" width="200"> |
+| You can leave the app during Health saving. If interrupted, reopen it and choose **Resume Health save**. | Wait for Health confirmation; this stage has no time estimate. | The Watch confirms the save and shows the calorie summary and whether the route is included. Check Health/Fitness after Watch and iPhone syncing. |
+
+### Recorded on Karoo, saved to Apple Health
+
+These screenshots illustrate the two functions: the Karoo ride data shows the recorded heart-rate trace alongside the ride measurements. That recording remains useful even if you do not use Apple Health. After importing, Apple Fitness displays the workout saved to Apple Health, including its route, distance, workout and elapsed times, calories, average power, cadence and speed.
+
+| Heart rate recorded with the ride | Imported workout in Apple Fitness |
+| :---: | :---: |
+| <img src="docs/screenshots/07-karoo-recorded-heart-rate.jpg" alt="Karoo ride data showing a heart-rate graph and lap statistics for distance, time, elevation, speed, heart rate and cadence" width="281"> | <img src="docs/screenshots/08-apple-fitness-workout.jpg" alt="Apple Fitness showing an imported 22.20 km outdoor cycle with route map, times, calories, average power, cadence and speed" width="281"> |
+| The heart-rate graph confirms that readings were recorded in the Karoo ride. The selected lap also shows average, maximum and minimum heart rate. | The route and ride measurements appear in Fitness after Health syncing. Available measurements depend on what Karoo recorded. |
+
+The Fitness summary does not show every stored measurement; check Apple Health for the imported heart-rate data. In this example, Fitness displays the same active and total calories, as described below. Apple Health may retain the older **WatchKarooBLE** source name on existing records.
+
 ## Battery and calories
 
 In my testing, Watch battery use is similar to recording a normal cycling workout. **Plan on around two hours**, depending on model, battery health and starting charge; this is not a guaranteed runtime. With Watch 29 / Karoo 21, the recovery window continues HR measurement for at most five minutes after a lost connection, then stops it if reconnection fails.
