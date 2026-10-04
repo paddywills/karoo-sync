@@ -6,24 +6,26 @@ Karoo records the ride. Your Watch sends live heart rate directly over Bluetooth
 
 Ride transfer and Health saving need **no internet or Karoo cloud upload**. Your usual Karoo-to-Strava sync can stay enabled.
 
-## What’s new — upcoming Watch 1.4 (29) / Karoo 1.4 (21)
+## What’s new — Watch 1.4 (29) / Karoo 1.4 (21)
 
-**Implemented for the next update; not yet available in the downloads below. Both apps must be updated for automatic recovery. Physical reboot and out-of-range verification is still pending.**
+**Recovery update — in internal testing, 4 October 2026.** Both builds are installed on the test devices, with Watch 29 distributed through internal TestFlight. Automatic recovery requires both updates. Reboot and out-of-range testing is still pending.
+
+**Joining the public beta?** The downloads below still provide Watch **1.4 (28)** and Karoo **1.4 (20)**. They do not yet include automatic recovery.
 
 - After a lost HR connection, Watch keeps measuring and tries to reconnect to the same Karoo for **up to five minutes**.
 - After restarting Karoo, **resume the ride**. Reception restarts if it was previously enabled, and the remembered Watch can reconnect without selecting its letter again.
 - If recovery times out, Watch alerts you, stops and discards its temporary session, and shows **Reconnect**.
 - **Disable reception** is an intentional stop, not a reason to reconnect. If Watch is already out of range, stop HR on Watch yourself or let its recovery window expire.
 
-The currently published Watch **1.4 (28)** improves save completion, top-left back navigation and app naming. Since the first public build, Health saves can resume on Watch and missing calories can be estimated without adding duplicate resting energy.
+The public Watch **1.4 (28)** improves save completion, top-left back navigation and app naming. Since the first public build, Health saves can resume on Watch and missing calories can be estimated without adding duplicate resting energy.
 
-## Install the beta
+## Install the public beta
 
 You need both apps for either function. No computer, Xcode or Developer Mode is required.
 
 | Device | Download |
 | --- | --- |
-| Apple Watch — watchOS 10+, paired with an iPhone on iOS 17+ | [Join through TestFlight](https://testflight.apple.com/join/CcbZKYg6) — currently Watch 1.4 (28) |
+| Apple Watch — watchOS 10+, paired with an iPhone on iOS 17+ | [Join through TestFlight](https://testflight.apple.com/join/CcbZKYg6) — public Watch 1.4 (28) |
 | Karoo — 2024 / third-generation model | [Download Karoo HR 1.4 (20)](https://github.com/paddywills/karoo-sync/releases/download/karoo-1.4-build20/KarooHR-1.4-build20.apk) |
 
 1. **Watch:** install TestFlight on your iPhone, open the joining link, accept the beta and install Karoo HR on Watch. There is no separate Karoo HR phone app.
@@ -38,11 +40,11 @@ First open **Karoo HR → Enable reception** on Karoo and allow Bluetooth access
 ### Live heart rate
 
 1. Tap **Start HR** on Watch and grant Heart Rate read access and the requested workout permission.
-2. Approve the **matching letter** on Karoo. With the upcoming recovery update, also complete Bluetooth pairing if asked: keep Karoo HR open on Karoo to enter the code shown on Watch. This remembers the approved Watch for later reconnections.
+2. Approve the **matching letter** on Karoo. With Watch 29 / Karoo 21, also complete Bluetooth pairing if asked: keep Karoo HR open on Karoo to enter the code shown on Watch. This remembers the approved Watch for later reconnections.
 3. Once heart rate appears, pair **Karoo HR (Apple Watch)** in Karoo’s **Sensors** settings and add a Heart Rate field to your riding profile.
 4. Optionally add the full-page **Karoo HR** data field to your ride profile for status and letter approval while riding. This is a profile data page, not a Karoo system tab.
 
-Only the approved Watch supplies heart rate. Another nearby Watch still needs your letter approval. Automatic recovery uses the stored Bluetooth bond, not the displayed name or letter. If you replace your Karoo, the upcoming Watch update offers **More → Help & version → Pair another Karoo** while HR is stopped.
+Only the approved Watch supplies heart rate. Another nearby Watch still needs your letter approval. In Watch 29 / Karoo 21, automatic recovery uses the stored Bluetooth bond, not the displayed name or letter. If you replace your Karoo, Watch 29 offers **More → Help & version → Pair another Karoo** while HR is stopped.
 
 ### Apple Health ride import
 
@@ -62,11 +64,11 @@ You do not need to start HR or configure Karoo’s heart-rate sensor to import s
 
 ### Recovering a lost HR connection
 
-**With the upcoming updates on both devices:** leave Watch running while it shows **Reconnecting…**. It keeps measuring for up to five minutes; you can lower your wrist normally. Bring the devices together or, after a Karoo reboot, use **Resume Ride** if offered. Reception and the remembered Watch should reconnect automatically. Check that fresh HR returns on Karoo.
+**Watch 29 / Karoo 21 (internal testing):** leave Watch running while it shows **Reconnecting…**. It keeps measuring for up to five minutes; you can lower your wrist normally. Bring the devices together or, after a Karoo reboot, use **Resume Ride** if offered. Reception and the remembered Watch should reconnect automatically. Check that fresh HR returns on Karoo.
 
 If it takes longer, Watch stops HR, alerts you and offers **Reconnect** on its home screen. Resume the ride on Karoo first, then tap it. If reception did not restart, open Karoo HR and **Enable reception**. To import instead, choose **More → Sync ride** on Watch.
 
-**On the currently published Watch 28 / Karoo 20:** after a restart, reopen Karoo HR, enable reception, and use **More → Start HR** on Watch. Approve the matching letter again if asked.
+**Watch 28 / Karoo 20 (public beta):** after a restart, reopen Karoo HR, enable reception, and use **More → Start HR** on Watch. Approve the matching letter again if asked.
 
 Karoo continues recording if Watch disconnects or its battery runs out. Missing HR readings are not backfilled, but any ride saved on Karoo can still be imported into Health later. Recovery cannot recreate missing measurements or recover an unsaved ride. If you disable reception while Watch is out of range, it cannot receive that stop immediately; use **Stop HR** on the reconnecting Watch to end it straight away.
 
@@ -83,7 +85,7 @@ Avoid importing a ride already saved by HealthFit or another app. Available meas
 
 ## Battery and calories
 
-In my testing, Watch battery use is similar to recording a normal cycling workout. **Plan on around two hours**, depending on model, battery health and starting charge; this is not a guaranteed runtime. The upcoming recovery window continues HR measurement for at most five minutes after a lost connection, then stops it if reconnection fails.
+In my testing, Watch battery use is similar to recording a normal cycling workout. **Plan on around two hours**, depending on model, battery health and starting charge; this is not a guaranteed runtime. With Watch 29 / Karoo 21, the recovery window continues HR measurement for at most five minutes after a lost connection, then stops it if reconnection fails.
 
 Recorded active calories are used when available. Otherwise, sufficiently complete recorded power can provide an estimate. Karoo HR shows active calories and a total estimate including resting energy during active riding. It saves active calories to Health and keeps the total estimate in workout metadata. **Fitness may display the same figure for active and total calories.** Karoo HR never adds derived resting-energy entries.
 
